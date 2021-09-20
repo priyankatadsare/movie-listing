@@ -1,0 +1,56 @@
+.movies_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  padding: 2rem;
+}
+
+.movies_tag_space {
+  margin: 10px;
+}
+
+.movies_tag {
+  border: 1px solid #2e78ca;
+  margin-right: 10px;
+  color: #2e78ca;
+  font-size: 0.7em;
+  font-weight: 300;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  margin: 20px;
+}
+
+.genre_dropdown {
+  max-width: 400px;
+}
+/* .movies_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 3rem;
+  } */
+
+.movie_details_data_wrapper{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 3rem;
+  margin: 2rem;
+}
+.movie_details_data_image{
+  margin-bottom: 20px;
+}
+
+.movie_details_data_header{
+
+}
+
+.movie_details_data_text{
+
+}
+
+.movie_details_block {
+  margin-left: 20px;
+}
