@@ -97,7 +97,7 @@ class Movies extends Component {
   };
 
   render() {
-    const { movies, selectedOption, isLoading } = this.state;
+    const { movies, isLoading } = this.state;
     console.log("movies", this.state.movies);
     return (
       <Fragment>
@@ -141,22 +141,17 @@ class Movies extends Component {
                   {movies &&
                     movies.map((data, i) => (
                       <center>
-                        <Card
-                          className="movie_data_wrapper"
-                          onClick={this.handleRedirect}
-                          key={i}
-                        >
+                        <Card className="movie_data_wrapper" key={i}>
                           <div className="movie_data_header">
-                            <img
-                              className="movie_data_image"
-                              src={`https://image.tmdb.org/t/p/w200/${data.poster_path}`}
-                              alt="poster"
-                            />
+                            <a href={`/moviedetails/${data.id}`}>
+                              <img
+                                className="movie_data_image"
+                                src={`https://image.tmdb.org/t/p/w200/${data.poster_path}`}
+                                alt="poster"
+                              />
+                            </a>
                           </div>
-                          <div
-                            className="movie_data_detail"
-                            onClick={this.handleRedirect}
-                          >
+                          <div className="movie_data_detail">
                             <Link
                               className="movie_data_detail_title"
                               to={`/moviedetails/${data.id}`}

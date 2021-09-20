@@ -92,13 +92,13 @@
   text-decoration: none;
 }
 
-.movie_data_header {
+/* .movie_data_header {
   height: 230px;
   background: #1a55ab;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .movie_data_image {
   display: block;

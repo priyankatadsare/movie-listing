@@ -44,20 +44,27 @@ class MovieDetails extends Component {
             </div>
             <div className="movie_details_block">
               <h3 className="movie_details_data_header">
-                Title: {movieDetails.title}
+                <b>Title:</b> <br />
+                {movieDetails.title}
               </h3>
               <p className="movie_details_data_text">
-                Release Date: {movieDetails.release_date}
+                <b>Release Date:</b> <br />
+                {movieDetails.release_date}
               </p>
               <p className="movie_details_data_text">
-                Status: {movieDetails.status}
+                <b>Status:</b> <br />
+                {movieDetails.status}
+              </p>
+              <p className="movie_details_data_text">
+                <b>Overview:</b> <br />
+                {movieDetails.overview}
               </p>
               {movieDetails.genres && (
                 <table>
                   <tbody>
                     <tr>
                       <td>
-                        Genres:{" "}
+                        <b>Genres:</b> <br />
                         {movieDetails.genres.map((data, i) => {
                           return `  ${data.name}, `;
                         })}
