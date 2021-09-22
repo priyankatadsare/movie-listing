@@ -32,7 +32,7 @@ function Movies(props) {
     let userId = localStorage.getItem("user");
     console.log("User Type", userId);
     setUserType(userId);
-  }, []);
+  });
 
   const getMovieList = (searchTerm) => {
     console.log("searchTerm", searchTerm);
@@ -102,7 +102,7 @@ function Movies(props) {
           <div className="movies_box_wrapper">
             <h2>Movies</h2>
             <div className="line"></div>
-            {userType == "admin" && (
+            {userType === "admin" && (
               <div className="row">
                 <button className="add_button" onClick={showAddModal}>
                   Add Movie

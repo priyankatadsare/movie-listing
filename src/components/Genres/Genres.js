@@ -63,7 +63,7 @@ function Genre(props) {
           <div className="movies_box_wrapper">
             <h2>Genres</h2>
             <div className="line"></div>
-            {userType == "admin" && (
+            {userType === "admin" && (
               <div className="row">
                 <button className="add_button" onClick={showGenreModal}>
                   Add Genres
